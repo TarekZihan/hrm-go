@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>leave allocation</title>
+        <link rel="stylesheet" href="./css/salarylist.css" />
+        <link rel="stylesheet" href="./css/salarypaymentstatement.css" />
+        <link rel="stylesheet" href="./css/spstatementview.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container-fluid p-0 body_container">
+            <aside id="sidebar" class="pt-5 mt-4">
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Dashboard
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Dashboard
+                    </p>
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Dashboard
+                    </p>
+                </div>
+                <!-- link item with sub link start -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/staff_icon.png" alt />Staff
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Dashboard
+                    </p>
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Dashboard
+                    </p> -->
+                </div>
+                <!-- link item with sub link start -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/staff_icon.png" alt />Employee
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />List employee
+                    </a>
+                    <a class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />List Intern
+                    </a>
+                    <a class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Create Intern
+                    </a>
+                    <a href="employeeupdate.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Employee Update
+                    </a>
+                </div>
+                <!-- link item with sub link start -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/staff_icon.png" alt />Employee Salary
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="allmonthslist.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />All Month Salary List
+                    </a>
+                    <a href="salarycalculator.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Salary Calculator
+                    </a>
+                    <a href="salarypaymentstatement.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Salary Payment Statement
+                    </a>
+                    <a href="employersalarystatement.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Employee Salary  Statement
+                    </a>
+                    <a href="basicsalary.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Basic Salary,Bonus & Deduction
+                    </a>
+                </div>
+                <!-- link item with sub link start -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/timesheet.png" alt />TimeSheet
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="allmonthslist.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Present & Absent Day List
+                    </a>
+                    <a href="salarycalculator.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Present & Absent Hour List
+                    </a>
+                    <a href="presentabsentsaylist.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Present & Absent Monthly Day List
+                    </a>
+                    <a href="presentabsentmonthdaylistview.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Present & Absent Monthly Hours List
+                    </a>
+                   
+                </div>
+                <!-- link item with sub link start -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/timesheet.png" alt />Manage Leave
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="leaveApproveAndDeclineList.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Leave Approve & Decline List
+                    </a>
+                    <a href="shortTimeLeaveApprovedAndDeclineList.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Short Time Leave Approved & Decline List
+                    </a>
+                    <a href="leaveAllocation.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Leave Allocation
+                    </a>
+                    <a href="leaveSummery.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Leave Summery
+                    </a>
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payroll
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="payroll.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                 
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Performance
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Finance
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Training
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />HR Admin Setup
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Recruitment
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Contacts
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Payslip
+                    </a>                  -->
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Tickets
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="ticketRegularNotice.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Regular Notice
+                    </a>                 
+                    <a href="causeNoticeAndAnswer.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Cause Notice Answer
+                    </a>                 
+                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="holidayCalendar.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                   
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Event
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Assets
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Document
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Email Templates
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Company Policy
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />HRM System Setup
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <!-- <a href="holiday.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday List
+                    </a>                 
+                    <a href="" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Holiday Calendar
+                    </a>                                    -->
+                </div>
+                <!-- link item with sub link end -->
+                <!-- link item with sub link start -->
+                <div class="menu_link_wraper ">
+                    <p class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Penalty & Bonus Settings
+                    </p>
+                    <img class="right_arrow" src="img/right_arrow.png" alt />
+                </div>
+                <div class="sub_menu hide">
+                    <a href="panalty bonus/panaltydaysetting.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Penalty Day Settings
+                    </a>                 
+                    <a href="panalty bonus/apenaltyhourlist.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Penalty Hour Settings
+                    </a>                                   
+                    <a href="panalty bonus/bonusdaysetting.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Bonus Day Settings
+                    </a>                                   
+                    <a href="panalty bonus/bonushoursetting.html" class="mb-0 d-flex align-items-center gap-2">
+                        <img class="dash_icon" src="img/dashboard_icon.png" alt />Bonus Hour Settings
+                    </a>                                   
+                </div>
+                <!-- link item with sub link end -->
+             
+            </aside>
+            <div class="dashboard_body">
+                <div class="salary_list_main container-fluid">
+                    <div class="main-sub d-flex justify-content-between">
+                        <div class="d-flex gap-3 align-items-center flex-wrap">
+                            <div class="item d-flex gap-3 shadow-sm">
+                                <div class="logo">
+                                    <img src="./img/images.jpg" alt />
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="logo_text">
+                                        <span class="text-">Hasibul Haque</span>
+                                        <p class>UI/UX Designer</p>
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M7 10L12 15L17 10"
+                                            stroke="#767676"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-double d-flex align-items-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M21 6.50001C21 8.43001 19.43 10 17.5 10C15.57 10 14 8.43001 14 6.50001C14 4.57001 15.57 3.00001 17.5 3.00001C19.43 3.00001 21 4.57001 21 6.50001ZM19 11.79C18.5 11.92 18 12 17.5 12C16.0421 11.9974 14.6447 11.4171 13.6138 10.3862C12.583 9.3553 12.0026 7.95788 12 6.50001C12 5.03001 12.58 3.70001 13.5 2.71001C13.3185 2.48755 13.0897 2.30838 12.8302 2.18555C12.5707 2.06272 12.2871 1.99934 12 2.00001C10.9 2.00001 10 2.90001 10 4.00001V4.29001C7.03 5.17001 5 7.90001 5 11V17L3 19V20H21V19L19 17V11.79ZM12 23C13.11 23 14 22.11 14 21H10C10 21.5304 10.2107 22.0391 10.5858 22.4142C10.9609 22.7893 11.4696 23 12 23Z"
+                                    fill="black" />
+                                <circle cx="18.5" cy="6.5" r="4.5"
+                                    fill="#D10000" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Sallarylist-home -->
+                    <div class="my-4">
+                        <div class="second-text">
+                            <p class="mb-0">Leave Allocation</p>
+                            <span style="color: #0f8dba">Timesheet ><span
+                                    style="color: #767676">
+                                    Short Time Leave Approved & Decline List
+                                </span></span>
+                        </div>
+                    </div>
+                    <!-- common section end  -->
+                    <!-- common section end  -->
+                    <!-- common section end  -->
+                    <!-- common section end  -->
+                    <!-- common section end  -->
+                    <!-- common section end  -->
+
+                    <main>
+                        <div class="salary_list_table">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="salary_common_part" for="">From
+                                        Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="salary_common_part" for="">To
+                                        Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <label class="salary_common_part" for=""> Monthly</label>
+                                    <select class="form-select">
+                                        <option selected=""></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="salary_submit_common col-md-1 d-flex align-items-end">
+                                    <div class="btn">
+                                        <i class="bx bx-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="salary_list_table mt-4">
+                           <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3 mb-3 ">
+                                <div>
+                                    <select class="form-select">
+                                        <option selected="">10</option>
+                                        <option value="1">5</option>
+                                        <option value="2">15</option>
+                                    </select>
+                                </div>
+                                <p class="mb-0">Entries Per Page</p>
+                                <div class="form-check ">
+                                    <input class="form-check-input" checked="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    </label>
+                                </div>
+                                <div>
+                                    <button style="background-color: #b161ef; color: aliceblue;" class="btn">Current Month</button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-content-center gap-2 mb-3">
+                                <img  src="./img/file_excel.png" alt="">
+                                <img title="single employee"  data-bs-target="#singleEmployeeModal" data-bs-toggle="modal" src="./img/add_fill.png" alt="">
+                                <img title="all employee"  data-bs-target="#allEmployeeModal" data-bs-toggle="modal" src="./img/add_fill.png" alt="">
+                            </div>
+                           </div>
+                            <table class="table salary_list table-bordered">
+                                <thead class="salary_list_title">
+                                    <tr>
+                                        <th>Employee Name</th>
+                                        <th>EMPLOYEE  <br>
+                                            ID</th>
+                                            <th>DESIGNATION</th>
+                                        <th>TOTAL EMPLOYEMENT <br>
+                                            DAYS</th>
+                                        <th>ANNUAL LEAVE </th>
+                                        <th>ANNUAL LEAVE <br>
+                                            PER MONTH </th>
+                                        <th>SICK LEAVE</th>
+                                        <th>OTHERS LEAVE</th>
+                                        <th>TOTAL LEAVE   <br>
+                                            PER MONTH</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="salary_list_body">
+                                    <tr>
+                                        <td>Newajuddin</td>
+                                        <td>202</td>
+                                        <td>Jr. Software Engeneer</td>
+                                        <td>240 Day</td>
+                                        <td>24 Day</td>
+                                        <td>2 Day</td>
+                                        <td>1 Day</td>
+                                        <td>2 Day</td>
+                                        <td>1 Day</td>
+                                        <td>
+                                            <div  class="d-flex align-items-center gap-2">
+                                                <a href=""><i class="bx bxs-show fs-3" style="color:#4483b5"></i></a>
+                                            <a href=""><img src="./img/tabler_edit.png" alt=""></a>
+                                            <a href=""><img src="./img/trash.png" alt=""></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                   
+                                    
+                                </tbody>
+                            </table>
+
+                            <div class="pagination">
+                                <p>Showing 1 to 10 of 30 entries </p>
+                                <div class="page_wraper">
+                                    <span class="active">1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <!-- all employee modal start -->
+                  
+                    <div class="modal fade" id="allEmployeeModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog  modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 style="color: #0F49BA;" class="modal-title fs-6"> Leave Allocation For All Employee</h1>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row pb-4">
+                              <div class="col-md-12 d-flex align-items-center mb-2">
+                                <div class=" mb-3 flex-grow-1">
+                                    
+                                    <label class="salary_common_part" for=""> Leave Type</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                            <div class=" mx-2 mt-1">
+                                <img   src="./img/add_fill.png" alt="">
+                            </div>
+                            <div class=" mb-3 flex-grow-1">
+                                
+                                    <label class="salary_common_part" for=""> Number of Days ( Per Month )</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                              </div>
+                              <div class="col-md-12 d-flex align-items-center mb-2">
+                                <div class=" mb-3 flex-grow-1">
+                                    
+                                    <label class="salary_common_part" for=""> Leave Type</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                            <div class=" mx-2 mt-1">
+                                <img   src="./img/add_fill.png" alt="">
+                            </div>
+                            <div class=" mb-3 flex-grow-1">
+                                
+                                    <label class="salary_common_part" for=""> Number of Days ( Per Month )</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                              </div>
+                              <div class="col-md-12 d-flex align-items-center mb-2">
+                                <div class=" mb-3 flex-grow-1">
+                                    
+                                    <label class="salary_common_part" for=""> Leave Type</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                            <div class=" mx-2 mt-1">
+                                <img   src="./img/add_fill.png" alt="">
+                            </div>
+                            <div class=" mb-3 flex-grow-1">
+                                
+                                    <label class="salary_common_part" for=""> Number of Days ( Per Month )</label>
+                                    <select class="form-select">
+                                        <option selected="">Enter occasion</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                               
+                            </div>
+                              </div>
+                           
+                                <div class="col-md-12 d-flex justify-content-center align-items-center gap-3">
+                                    <button data-bs-dismiss="modal" aria-label="Close" class="cancel_btn">Cancel</button>
+                                    <button class="create_btn">create</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  <!-- all employee modal end -->
+                    <!-- single employee modal start -->
+                  
+                    <div class="modal fade" id="singleEmployeeModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog  modal-lg modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 style="color: #0F49BA;" class="modal-title fs-6">  Leave Allocation For Single Employee</h1>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row pb-4">
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                    <label class="salary_common_part" for=""> Employee </label>
+                                    <select class="form-select">
+                                        <option selected disabled>Select Employee</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                              </div>
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                    <label class="salary_common_part" for=""> Employee ID  </label>
+                                    <input class="form-control"  />
+                              </div>
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                    <label class="salary_common_part" for=""> Employee Designation  </label>
+                                    <input class="form-control"  />
+                              </div>
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                <label class="salary_common_part" for=""> Annual Leave </label>
+                                <select class="form-select">
+                                    <option selected disabled>Select annual  leave type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                          </div>
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                <label class="salary_common_part" for=""> Sick Leave </label>
+                                <select class="form-select">
+                                    <option selected disabled>Select Sick  leave type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                          </div>
+                              <div class="col-md-4  mb-2 common_leave_input">
+                                <label class="salary_common_part" for=""> Other Leave </label>
+                                <select class="form-select">
+                                    <option selected disabled>Select other  leave type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                          </div>
+                          <div class="col-md-12  mb-2 common_leave_input">
+                            <label class="salary_common_part" for=""> Remark/Documents </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="col-md-3">
+                         <label for="leave_upload" class="leave_upload">
+                            Upload Document 
+                            <img src="./img/material-symbols_upload.png" alt="">
+                            <input id="leave_upload" type="file" class="d-none">
+                         </label>
+                      </div>
+                          </div>
+                              
+                           
+                           
+                                <div class="col-md-12 d-flex justify-content-end align-items-center gap-3">
+                                    <button data-bs-dismiss="modal" aria-label="Close" class="cancel_btn">Cancel</button>
+                                    <button class="create_btn">create</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  <!-- single employee modal end -->
+                    
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+        <script src="js/app.js">
+      
+    </script>
+    </body>
+</html>

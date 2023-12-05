@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.salary_list_container {
+    background: #FBFBFD;
+}
+
+.salary_list_main {
+    width: 2006px;
+    height: 1293px;
+    padding: 18px;
+}
+
+.item {
+    background: #FFF;
+    border-radius: 8px;
+    width: 224px;
+    height: 68px;
+}
+
+.logo img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 2px;
+    object-fit: cover;
+}
+
+.logo_text span {
+    font-size: 12px;
+    color: #767676;
+}
+
+.logo_text p {
+    color: #0F49BA;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.second-text p {
+    color: #060606;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.second-text span {
+    color: #767676;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+/* salarylist-form */
+
+.salary_list_form {
+    padding: 33px 37px;
+    margin-top: 14px;
+    border-radius: 12px;
+    border: 1px solid var(--sidebar-text, #7B7B7B);
+    background: #FFF;
+    box-shadow: -3px 2px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.salary_list_form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--sidebar-text, #7B7B7B);
+    background: #FFF;
+    box-shadow: -3px 2px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.salary_list_form select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--sidebar-text, #7B7B7B);
+    background: #FFF;
+    box-shadow: -3px 2px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.salary_submit .btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #0F8DBA;
+    color: #FBFBFD;
+}
+
+.salary_common_part {
+    color: #060606;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+/* salarylist-table */
+
+.salary_list_table {
+    padding: 32px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: -3px 2px 16px 0px rgba(0, 0, 0, 0.10);
+    overflow: auto;
+    max-height: 500px;
+
+}
+
+.salary_list_table::-webkit-scrollbar {
+    width: 0px;
+}
+
+.salary_list_title {
+    border: 2px solid #9A9A9A;
+    background: #2464E1;
+    color: white;
+
+}
+
+.salary_list_body {
+    border: 3px solid #9A9A9A;
+    text-align: center;
+    color: #767676;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #9A9A9A;
+
+}
+
+.salary_list thead th {
+    padding: 22px;
+}
+
+
+/* salary_listview_header */
+
+.salary_listview_container {
+    padding: 28px 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: -3px 2px 16px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.salary_listview_table {
+
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
+}
+
+.salary_listview_table tr td:first-child {
+    color: #060606;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.salary_listview_table tr td:last-child {
+    color: #060606;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* salary Calculator */
+
+.no_shadow{
+    box-shadow: none !important;
+}

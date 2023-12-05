@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/salarypayment.css">
+    <link rel="stylesheet" href="./css/salarylist.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <div class="container-fluid row">
+    <div class="col-md-8">
+        <div class="salary_list_main container-fluid">
+            <div class="main-sub d-flex justify-content-between ">
+                <div class="d-flex gap-3 align-items-center flex-wrap">
+                    <div class="item d-flex gap-3 shadow-sm">
+                        <div class="logo">
+                            <img src="./img/images.jpg" alt="">
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <div class="logo_text">
+                                <span class="text-">Hasibul Haque</span>
+                                <p class="">UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 10L12 15L17 10" stroke="#767676" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-double d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M21 6.50001C21 8.43001 19.43 10 17.5 10C15.57 10 14 8.43001 14 6.50001C14 4.57001 15.57 3.00001 17.5 3.00001C19.43 3.00001 21 4.57001 21 6.50001ZM19 11.79C18.5 11.92 18 12 17.5 12C16.0421 11.9974 14.6447 11.4171 13.6138 10.3862C12.583 9.3553 12.0026 7.95788 12 6.50001C12 5.03001 12.58 3.70001 13.5 2.71001C13.3185 2.48755 13.0897 2.30838 12.8302 2.18555C12.5707 2.06272 12.2871 1.99934 12 2.00001C10.9 2.00001 10 2.90001 10 4.00001V4.29001C7.03 5.17001 5 7.90001 5 11V17L3 19V20H21V19L19 17V11.79ZM12 23C13.11 23 14 22.11 14 21H10C10 21.5304 10.2107 22.0391 10.5858 22.4142C10.9609 22.7893 11.4696 23 12 23Z"
+                            fill="black" />
+                        <circle cx="18.5" cy="6.5" r="4.5" fill="#D10000" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Sallarylist-home -->
+            <div class="mt-3">
+                <div class="second-text">
+                    <p>Salary Payment Statement</p>
+                    <span style="color: #0F8DBA;">Employee ><span style="color: #767676;">Salary Payment Statement
+                            </span></span>
+                </div>
+            </div>
+            <!-- salarylist-form -->
+            <div class="salary_payment_form">
+                <div class="row">
+                    <div class="col-md-11">
+                        <div class="row g-4">
+                            <div class="col-sm-4">
+                                <label class="salary_common_part" for="">From Month</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="salary_common_part" for="">To Month</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-sm-4 ">
+                                <label class="salary_common_part" for=""> Monthly</label>
+                                <select class="form-select">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salary_submit col-md-1 d-flex align-items-end justify-content-center">
+                        <div class="btn">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--salary-list-table -->
+            
+            <div class="salary_list_table mt-4">
+                <table class="table salary_list table-bordered">
+                    <thead class="salary_list_title">
+                        <tr>
+                            <th>Month Name</th>
+                            <th>No Of Emoloyee</th>
+                            <th>Payable Salary</th>
+                            <th>Payment Complete Amount </th>
+                            <th>payment Due Amount</th>
+                            <th> <i class='bx bx-reflect-horizontal'></i> ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody class="salary_list_body">
+                        <tr>
+                            <td>Octobor 2023</td>
+                            <td>500</td>
+                            <td>2000</td>
+                            <td>1500</td>
+                            <td>1900</td>
+                            <td><a href="spstatementview.html"><i class='bx bxs-show fs-3' style='color:#4483b5'></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Octobor 2023</td>
+                            <td>500</td>
+                            <td>2000</td>
+                            <td>1500</td>
+                            <td>1900</td>
+                            <td><a href="spstatementview.html"><i class='bx bxs-show fs-3' style='color:#4483b5'></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Octobor 2023</td>
+                            <td>500</td>
+                            <td>2000</td>
+                            <td>1500</td>
+                            <td>1900</td>
+                            <td><a href="spstatementview.html"><i class='bx bxs-show fs-3' style='color:#4483b5'></i></a></td>
+                        </tr>                  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div> -->

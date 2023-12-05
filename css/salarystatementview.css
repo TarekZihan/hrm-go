@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.salary_statement_view{
+    padding:46px 20px;
+    border: 1px solid #767676;
+    background: #FFF;
+    width: 800px;
+    height: 842px;
+
+}
+.salary_statement_header h2{
+    color: #1E1A1A;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.salary_statement_header p{
+    color: #17A1FA;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+hr{
+    width: 353px;
+    height: 1px;
+    border: 1px solid #9A9A9A;
+ 
+}
+.employee_statement_table tr td:first-child {
+    color: #060606;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.employee_statement_table tr td:last-child {
+    color: #060606;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.table_text h1{
+    color: #1E1A1A;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/* footer */
+ .signature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 230px;
+
+}
+
+.signature p {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+.signature .bottom {
+    background: #000;
+    width: 191px;
+    height: 1px;
+    margin-bottom: 12px;
+}
+                 
+            
